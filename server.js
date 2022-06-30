@@ -37,7 +37,7 @@ app.use('/student', require('./routes/StudentRoutes') )
 
 
 // server listen
-app.listen(PORT, () => console.log(`Server is running on port http//localhost:${PORT}`.bgRed.white))
+app.listen(PORT, () => console.log(`Server is running on port http//localhost:${PORT}`.bgGreen.white))
 
 
 
