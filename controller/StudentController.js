@@ -110,7 +110,8 @@ const showStudentEditForm = async(req, res) => {
 
     let fileName = req.body.old_photo;
 
-    if(req.file.filename){
+    console.log(req.body.old_photo);
+    if(req.file){
         fileName = req.file.filename
     }
 
@@ -119,7 +120,7 @@ const showStudentEditForm = async(req, res) => {
         new :true
     })
 
-
+    
     res.redirect('/student')
 }
 
